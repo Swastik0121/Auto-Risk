@@ -1,0 +1,92 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #f8fafc; /* A soft slate/gray background */
+  min-height: calc(
+    100vh - 70px
+  ); /* Adjust 70px to match your navbar's height */
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  width: 100%;
+  max-width: 480px; /* Limits the width so it looks great on desktop and mobile */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155; /* A readable dark gray, smoother than pure black */
+  margin-bottom: 0.5rem;
+}
+
+.form-card input[type='text'],
+.form-card select {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1e293b;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.form-card input[type='text']:focus,
+.form-card select:focus {
+  border-color: #3b82f6; /* Accent blue */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); /* Soft outer glow */
+}
+
+.form-card button[type='submit'] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2563eb; /* Strong primary blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.form-card button[type='submit']:hover {
+  background-color: #1d4ed8; /* Darkens slightly on mouse hover */
+}
+
+.file-upload-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 2px dashed #cbd5e1; /* Dash pattern instead of solid border */
+  border-radius: 8px;
+  background-color: #f8fafc;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.file-upload-zone:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+  color: #2563eb;
+}
